@@ -1,0 +1,25 @@
+AWS SNS:::
+AWS SNS (Simple Notification Service) is a fully managed messaging service that allows applications, microservices, 
+and users to send and receive notifications.
+
+🔹 Key Features of AWS SNS
+✅ Pub/Sub Messaging Model → Publishers send messages to topics, and subscribers receive them.
+✅ Supports Multiple Protocols → Send messages via Email, SMS, HTTP(S), Lambda, SQS, and 
+Mobile Push Notifications (FCM, APNs, etc.).
+✅ Highly Scalable & Reliable → Handles millions of messages per second.
+✅ Message Filtering → Subscribers can filter messages based on attributes.
+✅ Event-Driven Architecture → Works with AWS Lambda, Amazon SQS, and other AWS services.
+
+🔹 How AWS SNS Works
+1️⃣ Create an SNS Topic (e.g., order-updates)
+2️⃣ Subscribe to the Topic (Email, SMS, SQS, Lambda, etc.)
+3️⃣ Publish Messages to the Topic (from AWS SDK, CLI, or Console)
+4️⃣ SNS Delivers Messages to Subscribers
+
+🔹 Example Use Case:
+
+An e-commerce app sends order status updates to customers via SMS or email.
+
+A serverless app triggers AWS Lambda functions on new SNS messages.
+
+CloudWatch alarms use SNS to send alerts about system failures.

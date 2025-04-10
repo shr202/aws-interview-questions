@@ -166,6 +166,9 @@
    *Answer:* Yes, there are various limits on VPC resources, such as the maximum number of VPCs per region, the maximum number of subnets per VPC, and the maximum number of Elastic IP addresses per account, among others. These limits can be found in the AWS documentation.
    https://docs.aws.amazon.com/vpc/latest/userguide/amazon-vpc-limits.html
 
+   *******:
+  ** what is the difference between nacl and securitygroup?**
+  nacl operate at subnet level and security group operate at instance level.nacl is stateless[If you allow outbound traffic, you must explicitly allow the corresponding inbound traffic or vice versa] rulesa are evaluated based on definae order.security group oerates at instnace level  and is statefull [it will allow both inbound and outbound traffic if you enter inbound traffic it will automatically take outbound traffic]if dont have any allow/deny options and all rulea are evaluated. 
    
    
 
